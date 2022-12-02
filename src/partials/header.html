@@ -1,0 +1,104 @@
+<header class="header">
+  <div class="container">
+    <a href="./index.html"><img src="./images/header/logo.svg" alt="logo" /></a>
+
+    <nav class="header__desctop">
+      <ul class="header__nav">
+        <li class="header__list">
+          <a class="header__link" href="#hero">Home</a>
+        </li>
+        <li class="header__list">
+          <a class="header__link" href="#about">About us</a>
+        </li>
+        <li class="header__list">
+          <a class="header__link" href="#products">How it’s made?</a>
+        </li>
+        <li class="header__list">
+          <a class="header__link" href="#gallery">Our products</a>
+        </li>
+        <li class="header__list">
+          <a class="header__link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button
+      class="header__btn-open js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="header__icon-open">
+        <use href="./images/header/icon.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <button
+      class="header__btn header__btn--hidden"
+      type="button"
+      data-modal-open
+    >
+      Buy now
+      <svg class="header__arrov" aria-hidden="true">
+        <use href="./images/header/icon.svg#icon-arrov"></use>
+      </svg>
+    </button>
+
+    <div class="header__burger js-menu-container" id="mobile-menu">
+      <button type="button" class="header__btn-close js-close-menu">
+        <svg class="header__icon-close">
+          <use href="./images/header/icon.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <button class="header__btn" type="button" data-modal-open-mob>
+        Buy now
+        <svg class="header__arrov" aria-hidden="true">
+          <use href="./images/header/icon.svg#icon-arrov"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="header__nav">
+          <li class="header__list">
+            <a class="header__link" href="#hero">Home</a>
+          </li>
+          <li class="header__list">
+            <a class="header__link" href="#about">About us</a>
+          </li>
+          <li class="header__list">
+            <a class="header__link" href="#products">How it’s made?</a>
+          </li>
+          <li class="header__list">
+            <a class="header__link" href="#gallery">Our products</a>
+          </li>
+          <li class="header__list">
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- modal -->
+<div class="backdrop-header is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal__btn--close" data-modal-close>
+      <svg class="modal__cros-icon" aria-hidden="true">
+        <use href="./images/header/icon.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal__title">
+      order now and get a
+      <span class="modal__ title modal__title-discount"> discount!!!</span>
+    </h2>
+
+    <form action="" class="form">
+      <input class="form__input" type="text" placeholder="name" required />
+      <input class="form__input" type="tel" placeholder="telephone" required />
+      <input class="form__input" type="email" placeholder="e-mail" required />
+
+      <button class="modal__btn--send" type="submit">send</button>
+    </form>
+  </div>
+</div>

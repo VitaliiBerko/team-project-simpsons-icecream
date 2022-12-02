@@ -1,0 +1,197 @@
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 class="visually-hidden">Contacts</h2>
+    <ul class="contact-list list">
+      <li class="contact-list__item">
+        <p class="contact-list__name">CAFE</p>
+        <h3 class="contact-list__city">Chicago</h3>
+        <p class="contact-list__description">
+          Fusce ut velit laoreet, tempus arcu molestie vulputate
+        </p>
+        <div class="schedule">
+          <h4 class="schedule__date">Monday - Friday</h4>
+          <p class="schedule__time time-work">06:00 AM - 10:00 PM</p>
+          <h4 class="schedule__date">Saturday - Sunday</h4>
+          <p class="schedule__time time-work">08:00 AM - 16:00 PM</p>
+        </div>
+        <div class="contact-link">
+          <a class="contact-link__link" href="tel:+61(0)383766284"
+            >+61(0)383766284</a
+          >
+          <a class="contact-link__link" href="mailto:noreply@envato.com"
+            >noreply@envato.com</a
+          >
+        </div>
+      </li>
+      <li class="contact-list__item">
+        <p class="contact-list__name-truck">FOODTRUCK</p>
+        <h3 class="contact-list__city">Los Angeles</h3>
+        <p class="contact-list__description">
+          Fusce ut velit laoreet, tempus arcu molestie vulputate
+        </p>
+        <div class="schedule">
+          <h4 class="schedule__date">Monday - Friday</h4>
+          <p class="schedule__time time-work">06:00 AM - 10:00 PM</p>
+          <h4 class="schedule__date">Saturday - Sunday</h4>
+          <p class="schedule__time time-work">08:00 AM - 16:00 PM</p>
+        </div>
+        <div class="contact-link">
+          <a class="contact-link__link" href="tel:+61(0)383766284"
+            >+61(0)383766284</a
+          >
+          <a class="contact-link__link" href="mailto:noreply@envato.com"
+            >noreply@envato.com</a
+          >
+        </div>
+      </li>
+      <li class="contact-list__item">
+        <p class="contact-list__name">CAFE</p>
+        <h3 class="contact-list__city">New York</h3>
+        <p class="contact-list__description">
+          Fusce ut velit laoreet, tempus arcu molestie vulputate
+        </p>
+        <div class="schedule">
+          <h4 class="schedule__date">Monday - Friday</h4>
+          <p class="schedule__time time-work">06:00 AM - 10:00 PM</p>
+          <h4 class="schedule__date">Saturday - Sunday</h4>
+          <p class="schedule__time time-work">08:00 AM - 16:00 PM</p>
+        </div>
+        <div class="contact-link">
+          <a class="contact-link__link" href="tel:+61(0)383766284"
+            >+61(0)383766284</a
+          >
+          <a class="contact-link__link" href="mailto:noreply@envato.com"
+            >noreply@envato.com</a
+          >
+        </div>
+      </li>
+    </ul>
+    <!-- button -->
+    <ul class="contact-btn list">
+      <li>
+        <button
+          type="button"
+          class="contact-btn__locations"
+          data-modal-contacs-loc-open
+        >
+          Our Locations
+          <svg width="6" height="10" class="btn-icon">
+            <use href="./images/contact/icon.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button
+          type="button"
+          class="contact-btn__franchise"
+          data-modal-contacs-open
+        >
+          Franchise
+          <svg width="6" height="10" class="btn-icon__franchise">
+            <use href="./images/header/icon.svg#icon-arrov"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="backdrop is-hidden" data-modal-contacs>
+    <div class="modal">
+      <button data-modal-contacs-close type="submit" class="button-modal-close">
+        X
+      </button>
+      <p class="modal-title">Leave your details, we will call you back</p>
+      <form>
+        <div class="modal-field">
+          <label for="user-name" class="modal-label">Name</label>
+          <div class="input-wrap">
+            <input
+              type="text"
+              class="modal-input"
+              name="user-name"
+              id="user-name"
+            />
+          </div>
+        </div>
+        <div class="modal-field">
+          <label for="user-tel" class="modal-label">Phone number</label>
+          <div class="input-wrap">
+            <input
+              type="tel"
+              class="modal-input"
+              name="user-tel"
+              id="user-tel"
+            />
+          </div>
+        </div>
+        <div class="modal-field">
+          <label for="user-email" class="modal-label">Mail</label>
+          <div class="input-wrap">
+            <input
+              type="email"
+              class="modal-input"
+              name="user-email"
+              placeholder=""
+              id="user-email"
+            />
+          </div>
+        </div>
+        <div class="modal-field">
+          <label for="user-text" class="modal-label">Comment</label>
+          <textarea
+            name="user-text"
+            id="user-text"
+            class="modal-text"
+            placeholder="Enter text"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="button-send">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="backdrop-location is-hidden" data-modal-contacs-loc>
+    <div class="modal-loc">
+      <button
+        type="button"
+        class="button-modal-close"
+        data-modal-contacs-loc-close
+      >
+        X
+      </button>
+      <p class="modal-loc__top-text">Choose your location:</p>
+      <ul class="">
+        <li class="modal-loc__link">
+          <a
+            href="https://goo.gl/maps/zo28G2xunD4inJFSA"
+            class="modal-loc__text"
+            target="_blank"
+            rel="noopener nofollow noreferrer"
+            >Chicago</a
+          >
+        </li>
+        <li class="modal-loc__link">
+          <a
+            href="https://goo.gl/maps/QaH74354HTAuYQZM8"
+            class="modal-loc__text"
+            target="_blank"
+            rel="noopener nofollow noreferrer"
+            >Los Angeles</a
+          >
+        </li>
+        <li class="modal-loc__link">
+          <a
+            href="https://goo.gl/maps/f422x8iVy5utSwtk7"
+            class="modal-loc__text"
+            target="_blank"
+            rel="noopener nofollow noreferrer"
+            >New York</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script src="./js/modal-contacs.js"></script>

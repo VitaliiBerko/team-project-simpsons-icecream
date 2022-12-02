@@ -1,0 +1,133 @@
+<section class="hero" id="hero">
+  <div class="container">
+    <h1 class="hero__title animate__animated animate__backInDown">
+      ice cream made with
+      <span class="hero__title hero__title--red">passion</span>
+    </h1>
+
+    <ul class="hero__about">
+      <li>
+        <p class="hero__amount">16</p>
+        <p class="hero__establishments">cafes</p>
+        <div class="hero__establishments-icon"></div>
+      </li>
+      <li>
+        <p class="hero__amount">23</p>
+        <p class="hero__establishments">food trucks</p>
+        <div class="hero__amout-icon"></div>
+      </li>
+    </ul>
+
+    <div class="hero__btn--display">
+      <a href="#products" class="hero__btn">Products</a>
+      <a href="#about" class="hero__btn hero__btn--opposite">
+        How it’s made?
+      </a>
+    </div>
+
+    <div class="hero__milk-image">
+      <picture>
+        <source
+          srcset="
+            ./images/hero/tablet/milk-tablet.png    1x,
+            ./images/hero/tablet/milk-tablet@2x.png 2x
+          "
+          media="(max-width: 1199px)"
+        />
+        <source
+          srcset="
+            ./images/hero/desktop/milk-desktop.png    1x,
+            ./images/hero/desktop/milk-desktop@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <img src="./images/hero/tablet/milk-tablet.png" alt="jug of milk" />
+      </picture>
+      <div class="hero__text">
+        <button type="button" class="hero__btn-arrow">
+          <picture>
+            <source
+              srcset="
+                ./images/hero/tablet/arrow-right-tablet.png    1x,
+                ./images/hero/tablet/arrow-right-tablet@2x.png 2x
+              "
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="
+                ./images/hero/desktop/arrow-right-desktop.png    1x,
+                ./images/hero/desktop/arrow-right-desktop@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="hero__arrow-icon"
+              src="./images/hero/desktop/arrow-right-desktop.png"
+              alt="arrow right"
+            />
+          </picture>
+        </button>
+        <p class="hero__text--hidden">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <p class="hero__backdrop">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem
+          incidunt! Exercitationem architecto delectus quod mollitia.
+        </p>
+      </div>
+    </div>
+
+    <div class="hero__background"></div>
+
+    <picture class="hero__image">
+      <source
+        srcset="
+          ./images/hero/mobile/icecream.png    1x,
+          ./images/hero/mobile/icecream@2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="
+          ./images/hero/tablet/icecream-tablet.png    1x,
+          ./images/hero/tablet/icecream-tablet@2x.png 2x
+        "
+        media="(max-width: 1199px)"
+      />
+
+      <source
+        srcset="
+          ./images/hero/desktop/icecream-desktop.png    1x,
+          ./images/hero/desktop/icecream-desktop@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+
+      <img src="./images/hero/mobile/icecream.png" alt="ice cream" />
+    </picture>
+
+    <picture class="hero__tasty">
+      <source
+        srcset="
+          ./images/hero/tablet/tasty-tablet.png    1x,
+          ./images/hero/tablet/tasty-tablet@2x.png 2x
+        "
+        media="(max-width: 1199px)"
+      />
+
+      <source
+        srcset="
+          ./images/hero/desktop/tasty-desktop.png    1x,
+          ./images/hero/desktop/tasty-desktop@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+
+      <img
+        src="./images/hero/tablet/tasty-tablet.png"
+        alt="girl eating ice cream"
+      />
+    </picture>
+  </div>
+</section>

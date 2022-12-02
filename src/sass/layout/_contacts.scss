@@ -1,0 +1,558 @@
+.contact {
+  font-weight: 500;
+  font-size: 12px;
+  background-image: linear-gradient(
+    180deg,
+    var(--default-background) 300px,
+    var(--footer-section-background) 0
+  );
+  padding-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 30px;
+  }
+}
+
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(33.3333% - 20px);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  gap: 20px;
+  @media screen and (min-width: 768px) {
+    gap: 32px;
+    flex-wrap: nowrap;
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    background-color: var(--default-background);
+    width: 280px;
+    height: 412px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 40px 69px 40px 32px;
+
+    @media screen and (min-width: 768px) {
+      width: 224px;
+      height: 528px;
+      padding: 40px 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 368px;
+      height: 538px;
+      padding: 40px;
+    }
+  }
+
+  &__name,
+  &__name-truck {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.84;
+    letter-spacing: 0.04em;
+    color: var(--default-background);
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      height: 28px;
+      font-size: 16px;
+      line-height: 1.88;
+      letter-spacing: 0.04em;
+    }
+  }
+  &__name {
+    width: 80px;
+    background-color: var(--toffee-card-color);
+    @media screen and (min-width: 768px) {
+      width: 73px;
+    }
+  }
+
+  &__name-truck {
+    width: 130px;
+    background-color: var(--green-card-color);
+    @media screen and (min-width: 768px) {
+      height: 28px;
+      width: 138px;
+      font-size: 16px;
+      line-height: 1.88;
+      letter-spacing: 0.04em;
+    }
+  }
+  &__city {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.84;
+    letter-spacing: 0.04em;
+    color: #000;
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 12px;
+      font-size: 14px;
+      line-height: 1.88;
+      letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 8px;
+      font-size: 16px;
+      line-height: 1.88;
+      letter-spacing: 0.04em;
+    }
+  }
+  &__description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--gray-color-text);
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.64;
+      letter-spacing: 0.04em;
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.81;
+      letter-spacing: 0.04em;
+    }
+  }
+}
+
+.schedule {
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 24px;
+  padding: 24px 0;
+  @media screen and (min-width: 768px) {
+    padding: 32px 0;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0;
+    margin-bottom: 32px;
+  }
+
+  &__date {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    color: var(--black-color-text);
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.86;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.88;
+    }
+  }
+  &__time {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.84;
+    letter-spacing: 0.04em;
+    color: var(--sub-title-color);
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      line-height: 1.86;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.88;
+    }
+  }
+}
+
+.time-work {
+  margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 12px;
+  }
+}
+
+.contact-link__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--gray-color-text);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.contact-link__link:focus,
+.contact-link__link:hover {
+  color: var(--red-dominant-color);
+}
+
+.contact-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__locations {
+    cursor: pointer;
+    width: 162px;
+    height: 44px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.32;
+    color: var(--footer-section-background);
+    background-color: var(--red-dominant-color);
+    stroke: var(--default-background);
+    border-style: none;
+    border-radius: 22px;
+    margin-bottom: 10px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+      color: var(--red-dominant-color);
+      stroke: var(--red-dominant-color);
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 192px;
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 198px;
+      margin-right: 12px;
+    }
+  }
+
+  &__franchise {
+    cursor: pointer;
+    width: 162px;
+    height: 44px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.32;
+    color: var(--red-dominant-color);
+    background-color: var(--default-background);
+    border-style: none;
+    border-radius: 22px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+    @media screen and (min-width: 768px) {
+      width: 174px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 168px;
+    }
+  }
+}
+
+.btn-icon {
+  margin-left: 8px;
+  width: 12px;
+  height: 10px;
+}
+.btn-icon__franchise {
+  margin-left: 8px;
+  width: 12px;
+  height: 10px;
+  fill: var(--red-dominant-color);
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal {
+    width: 95vw;
+    height: 60vh;
+    overflow: auto;
+    background: var(--hero-background);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px;
+    .backdrop.is-hidden & {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    @media screen and (min-width: 768px) {
+      width: 60vw;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 35vw;
+      height: 70vh;
+      padding-top: 60px;
+    }
+  }
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.32;
+  text-align: center;
+  color: var(--grey-color-text);
+  margin-bottom: 12px;
+  @media screen and (min-width: 1200px) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.32;
+    letter-spacing: 0.03em;
+  }
+}
+.svg-button-modal {
+  fill: var(--black-color-text);
+  transition: fill var(--transition);
+  &:focus,
+  &:hover {
+    fill: var(--red-dominant-color);
+  }
+}
+
+.button-modal-close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 15px;
+  right: 15px;
+  color: var(--default-background);
+  background-color: var(--red-dominant-color);
+  border: 1px solid var(--hero-background);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--grey-color-text);
+  }
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-field {
+  margin-bottom: 10px;
+}
+.modal-input {
+  display: block;
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: border var(--transition);
+  &:focus,
+  &:hover {
+    border: 1px solid var(--red-dominant-color);
+  }
+}
+
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill var(--transition);
+  .modal-input:focus + &,
+  .modal-input:hover + & {
+    fill: var(--red-dominant-color);
+  }
+}
+.modal-label {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.16;
+  color: var(--grey-color-text);
+  margin-bottom: 4px;
+  display: block;
+}
+.modal-text {
+  width: 100%;
+  height: 70px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  outline: none;
+  display: block;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    border: 1px solid var(--red-dominant-color);
+  }
+}
+.modal-text::placeholder {
+  color: var(--grey-color-text);
+}
+.color-contract {
+  border-bottom: 1px solid var(--red-dominant-color);
+  color: var(--red-dominant-color);
+}
+
+.button-send {
+  cursor: pointer;
+  width: 162px;
+  height: 44px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.34;
+  color: var(--default-background);
+  background-color: var(--red-dominant-color);
+  border-style: none;
+  border-radius: 22px;
+  margin: 30px auto 0 auto;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: var(--default-background);
+    color: var(--red-dominant-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 192px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 198px;
+  }
+}
+
+.subscribe-btn-icon {
+  margin-left: 10px;
+  fill: var(--hero-background);
+}
+.input-wrap {
+  position: relative;
+}
+
+.backdrop-location {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-loc {
+    width: 95vw;
+    height: 60vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--hero-background);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px;
+    .backdrop-location.is-hidden & {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    @media screen and (min-width: 768px) {
+      width: 60vw;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 45vw;
+      height: 55vh;
+      padding-top: 60px;
+    }
+  }
+}
+
+.modal-loc__top-text {
+  font-family: 'Titan One', cursive;
+  color: var(--red-dominant-color);
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.34;
+  letter-spacing: 0.04em;
+}
+.modal-loc__text {
+  font-family: 'Titan One', cursive;
+  color: var(--grey-color-text);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+}
+
+.modal-loc__link {
+  margin-bottom: 20px;
+  &:hover .modal-loc__text,
+  &:focus .modal-loc__text {
+    color: var(--default-background);
+  }
+}

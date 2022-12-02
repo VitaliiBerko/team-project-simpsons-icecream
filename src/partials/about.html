@@ -1,0 +1,69 @@
+<section class="about" id="about">
+    <div class="about__container container">
+        <p class="about__pre-title animate__animated animate__backInLeft">tradition and love</p>
+        <h2 class="about__title animate__animated animate__backInRight">how it’s made?</h2>
+        <div class="about__block">
+            <div class="about__image-wrap">
+                <picture>
+                    <source srcset="
+                        ./images/about/cow-desktop@1x.webp 1x, 
+                        ./images/about/cow-desktop@2x.webp 2x"
+                        media="(min-width:1200px)"
+                        type="image/webp">
+
+                    <source srcset="
+                        ./images/about/cow-desktop@1x.png 1x, 
+                        ./images/about/cow-desktop@2x.png 2x"
+                        media="(min-width:1200px)"
+                        type="image/png">
+
+                    <source srcset="
+                        ./images/about/cow-tablet@1x.webp 1x, 
+                        ./images/about/cow-tablet@2x.webp 2x"
+                        media="(min-width:768px)"
+                        type="image/webp">
+
+                    <source srcset="    
+                        ./images/about/cow-tablet@1x.png 1x, 
+                        ./images/about/cow-tablet@2x.png 2x" 
+                        media="(min-width:768px)"
+                        type="image/png">
+
+                    <source srcset="
+                        ./images/about/cow-mobile@1x.webp 1x, 
+                        ./images/about/cow-mobile@2x.webp 2x"
+                        media="(min-width:320px)"
+                        type="image/webp">
+
+                    <source srcset="    
+                        ./images/about/cow-mobile@1x.png 1x, 
+                        ./images/about/cow-mobile@2x.png 2x" 
+                        media="(min-width:320px)"
+                        type="image/png">
+                
+                    <img class="about__image animate__animated animate__heartBeat" loading="lazy" src="./images/about/cow-mobile@1x.webp" alt="cow with milk">
+                </picture>
+            </div>
+            <div class="about__text-block">
+                <p class="about__main-text">
+                    Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+                    lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+                </p>
+                <p class="about__text">
+                    Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+                    in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+                    maximus. Cras massa nibh, tincidunt.
+                    <br>
+                    <br>
+                    Aliquam erat volutpat. Aenean accumsan.
+                </p>
+                <button class="about__btn animate__animated animate__flip" data-modal-open>
+                    Read more
+                    <svg class="btn__icon" width="5px" height="8px">
+                        <use href="./images/about/sprite.svg#arrow"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

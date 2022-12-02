@@ -1,0 +1,216 @@
+@charset "UTF-8";
+/* dm-sans-regular - latin */
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/dm-sans-v11-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/dm-sans-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/dm-sans-v11-latin-regular.woff2") format("woff2"), url("../fonts/dm-sans-v11-latin-regular.woff") format("woff"), url("../fonts/dm-sans-v11-latin-regular.ttf") format("truetype"), url("../fonts/dm-sans-v11-latin-regular.svg#DMSans") format("svg"); /* Legacy iOS */
+}
+/* dm-sans-500 - latin */
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/dm-sans-v11-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/dm-sans-v11-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/dm-sans-v11-latin-500.woff2") format("woff2"), url("../fonts/dm-sans-v11-latin-500.woff") format("woff"), url("../fonts/dm-sans-v11-latin-500.ttf") format("truetype"), url("../fonts/dm-sans-v11-latin-500.svg#DMSans") format("svg"); /* Legacy iOS */
+}
+/* dm-sans-700 - latin */
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/dm-sans-v11-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/dm-sans-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/dm-sans-v11-latin-700.woff2") format("woff2"), url("../fonts/dm-sans-v11-latin-700.woff") format("woff"), url("../fonts/dm-sans-v11-latin-700.ttf") format("truetype"), url("../fonts/dm-sans-v11-latin-700.svg#DMSans") format("svg"); /* Legacy iOS */
+}
+/* titan-one-regular - latin */
+@font-face {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/titan-one-v13-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/titan-one-v13-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/titan-one-v13-latin-regular.woff2") format("woff2"), url("../fonts/titan-one-v13-latin-regular.woff") format("woff"), url("../fonts/titan-one-v13-latin-regular.ttf") format("truetype"), url("../fonts/titan-one-v13-latin-regular.svg#TitanOne") format("svg"); /* Legacy iOS */
+}
+:root {
+  --red-dominant-color: #d41443;
+  --default-background: #e5e5e5;
+  --hero-background: #ffb8ca;
+  --footer-section-background: #fff5f6;
+  --sub-title-color: #ffa5ba;
+  --black-color-text: #000000;
+  --gray-color-text: #907e82;
+  --white-dominant-color: #ffffff;
+  --green-card-color: #c2e297;
+  --toffee-card-color: #f0d1a5;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Класс для обнуления базовых свойств у списков (ul) */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Свойства для корректного отображения картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Свойства для обнуления курсива у address */
+address {
+  font-style: normal;
+}
+
+body {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--black-color-text);
+  background-color: var(--default-background);
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-title {
+  font-family: "Titan One";
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--red-dominant-color);
+}
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 48px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-title {
+    font-size: 58px;
+    letter-spacing: 0.06em;
+  }
+}
+
+.section-subtitle {
+  font-family: "Titan One";
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--sub-title-color);
+}
+@media (min-width: 768px) {
+  .section-subtitle {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+}
+@media (min-width: 1200px) {
+  .section-subtitle {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: none;
+  border-radius: 22px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.31;
+  cursor: pointer;
+  background-color: var(--white-dominant-color);
+  color: var(--red-dominant-color);
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 16px;
+  }
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.footer__subtitle {
+  font-weight: 400;
+}
+
+.socials__list {
+  display: flex;
+  gap: 28px;
+}
+.socials__icon {
+  fill: #FEA5BB;
+}
+
+.copyright {
+  border-top: 1px solid #E1E1E1;
+}
